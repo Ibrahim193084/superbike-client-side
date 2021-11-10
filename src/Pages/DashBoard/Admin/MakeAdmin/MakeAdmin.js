@@ -29,7 +29,7 @@ const MakeAdmin = () => {
     return (
         <div className="text-center mt-5">
             <h2 className="text-primary">
-                Make an Admin
+                Make An Admin
             </h2>
             <form onSubmit={handleAdmin}>
                 <input className="p-1 w-50" onBlur={handleEmail} type="email" label="email" />
