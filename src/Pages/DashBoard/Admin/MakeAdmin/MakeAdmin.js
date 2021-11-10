@@ -32,7 +32,7 @@ const MakeAdmin = () => {
                 Make An Admin
             </h2>
             <form onSubmit={handleAdmin}>
-                <input className="p-1 w-50" onBlur={handleEmail} type="email" label="email" />
+                <input className="p-1 w-50" onBlur={handleEmail} type="email" label="email" placeholder='Email' />
                 <input className='btn btn-primary ms-2' type="submit" value="Make Admin" />
 
             </form>
