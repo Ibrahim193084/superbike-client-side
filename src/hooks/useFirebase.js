@@ -146,7 +146,7 @@ const useFirebase = () =>{
             .then()
     }
     
-    return{user,setUser,setError, error, signInWithGoogle, logOut, handleEmail, handlePassword,handleSignUp,handleLogIn,sendVerification, setIsLoading, isLoading, handleName, saveUser}
+    return{user,setUser,setError, error, signInWithGoogle, logOut, handleEmail, handlePassword,handleSignUp,handleLogIn,sendVerification, setIsLoading, isLoading, handleName, saveUser, admin}
 }
 
 export default useFirebase;
