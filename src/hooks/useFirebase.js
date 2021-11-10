@@ -45,8 +45,6 @@ const useFirebase = () =>{
     // ---------------------
     const handleSignUp = (e) =>{
       e.preventDefault()
-      password.length<6 && setError('password must be at least 6 characters long')
-      !/(?=.*[!@#$%^&*])/.test(password) && setError('password must be at least a spicial character or symbol')
       createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const {displayName, email, photoURL} = userCredential.user;
@@ -71,8 +69,6 @@ const useFirebase = () =>{
     // ---------------------
     const handleLogIn = (e) =>{
       e.preventDefault()
-      password.length<6 && setError('password must be at least 6 characters long')
-      !/(?=.*[!@#$%^&*])/.test(password) && setError('password must be at least a spicial character or symbol')
       signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const {displayName, email, photoURL} = userCredential.user;
