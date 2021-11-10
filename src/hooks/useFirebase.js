@@ -10,6 +10,7 @@ const useFirebase = () =>{
     const [password, setPassword] = useState('')
     const [name, setName] = useState('')
     const [isLoading, setIsLoading] = useState(true)
+    const [admin, setAdmin] = useState(false)
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
     // google sign in handler
@@ -112,6 +113,12 @@ const useFirebase = () =>{
       });
       return unsubscribed;
     },[])
+      //set admin
+    useEffect(() => {
+        fetch(`https://arcane-hamlet-67437.herokuapp.com/user/${user.email}`)
+            .then(res => res.json())
+            .then(data => setAdmin(data.admin))
+    }, [user.email])
 
     // handle log out
     const logOut = () =>{
