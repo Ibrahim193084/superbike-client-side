@@ -53,7 +53,7 @@ fetch(url,{
 
     return (
         <div>
-            <h2>Manage all orders</h2>
+            <h2 className="text-primary text-center mt-2">Manage all orders</h2>
             <Table striped bordered hover>
   <thead>
     <tr>
@@ -61,9 +61,10 @@ fetch(url,{
       <th>Email</th>
       <th>Address</th>
       <th>Phone Number</th>
-      <th>Tour Place</th>
+      <th>Cycle Name</th>
       <th>Date</th>
-      <th>Cost</th>
+      <th>Price</th>
+      <th>Size</th>
       <th>Status</th>
       <th>Update Status</th>
       <th>Delete</th>
@@ -86,13 +87,16 @@ fetch(url,{
                   {order.phone}
               </td>
               <td>
-                  {order.tourplace}
+                  {order.cycleName}
               </td>
               <td>
                   {order.date}
               </td>
               <td>
-                  {order.cost}
+                  {order.price}
+              </td>
+              <td>
+                  {order.size}
               </td>
               <td className="text-danger">
                   {order.status}
