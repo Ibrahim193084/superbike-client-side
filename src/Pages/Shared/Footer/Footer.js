@@ -33,6 +33,11 @@ activeStyle={activeStyle}>
 Cycles
 </NavLink>
  <NavLink className="navlink"
+to="/morecycles"
+activeStyle={activeStyle}>
+More Cycles
+</NavLink>
+ <NavLink className="navlink"
 to="/reviews"
 activeStyle={activeStyle}>
 Reviews
