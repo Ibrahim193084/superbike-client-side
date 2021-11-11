@@ -8,7 +8,7 @@ const News = () => {
         <Row xs={1} md={4} className="g-2">
         <Col>
  <Card className="rounded-5 mx-2 mb-3">
-   <Card.Img style={{height: '300px'}} className="p-3 rounded-5" variant="top" src="https://thumbs.dreamstime.com/z/long-distance-cyclist-bicycle-ocean-cyclists-closes-tool-his-hand-as-stands-his-packed-background-85922543.jpg" />
+   <Card.Img style={{height: '300px'}} className="p-3 rounded-5" variant="top" src="https://blog.mapmyrun.com/wp-content/uploads/2017/10/7-Things-No-One-Tells-You-About-Long-Distance-Cycling.jpg" />
    <Card.Body>
     
      <Card.Text>
